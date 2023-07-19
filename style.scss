@@ -11,7 +11,8 @@ body {
 }
 
 img{
-    max-width: auto;
+    // width: 25%;
+    max-width: 100%;
     display: block;
 }
 
@@ -24,6 +25,18 @@ h1, h2, h3, p {
     max-width: 65em;
     margin: 0 auto;
 }
+
+.split {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    &>* {
+      flex-basis: 30%;
+      min-width: 15em;
+    }
+  }
 
 .spacing > * + * {
     margin-top: var(--spacer, 2rem);
@@ -58,7 +71,15 @@ h1, h2, h3, p {
 }
 
 .section-title {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
 
+}
+
+section {
+    padding: 7em 0;
 }
 
 .hero{
@@ -71,6 +92,9 @@ h1, h2, h3, p {
         background: url(img/shoe-3.png),
                     radial-gradient(#444, #111);
         background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
 
     }
 }

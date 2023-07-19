@@ -11,7 +11,7 @@ body {
 }
 
 img {
-  max-width: auto;
+  max-width: 100%;
   display: block;
 }
 
@@ -23,6 +23,17 @@ h1, h2, h3, p {
   width: 85%;
   max-width: 65em;
   margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.split > * {
+  flex-basis: 30%;
+  min-width: 15em;
 }
 
 .spacing > * + * {
@@ -53,6 +64,17 @@ h1, h2, h3, p {
   text-transform: uppercase;
 }
 
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+  line-height: 1;
+  color: #17353d;
+}
+
+section {
+  padding: 7em 0;
+}
+
 .hero {
   color: white;
   text-align: center;
@@ -63,5 +85,8 @@ h1, h2, h3, p {
   .hero {
     background: url(img/shoe-3.png), radial-gradient(#444, #111);
     background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }/*# sourceMappingURL=style.css.map */
