@@ -25,6 +25,10 @@ h1, h2, h3, p {
   margin: 0 auto;
 }
 
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -41,4 +45,23 @@ h1, h2, h3, p {
 .btn:hover, .btn:focus {
   transform: scale(1.1);
   opacity: 0.9;
+}
+
+.primary-title {
+  font-size: clamp(3rem, 5vw + 1rem, 4.5rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
+}
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background: url(img/shoe-3.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+  }
 }/*# sourceMappingURL=style.css.map */
