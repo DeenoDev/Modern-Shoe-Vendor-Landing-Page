@@ -110,6 +110,7 @@ section {
 }
 .featured__item:hover .featured__details, .featured__item:focus .featured__details {
   opacity: 1;
+  text-shadow: 0 0 2em white;
 }
 .featured__item::after {
   content: "";
