@@ -81,7 +81,7 @@ h1, h2, h3, p {
 
 section {
     padding: 7em 0;
-    text-align: center;
+    // text-align: center;
 }
 
 .hero{
@@ -157,5 +157,16 @@ section {
 
 .product{
     background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+
+    &__title {
+        font-size: 4rem;
+        line-height: 1.1;
+        color: #fff;
+        text-shadow: 0 0 .2em rgba(#000, .2);
+    }
 
 }
