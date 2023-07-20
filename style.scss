@@ -80,8 +80,8 @@ h1, h2, h3, p {
 }
 
 section {
-    padding: 7em 0;
-    // text-align: center;
+    padding: 4em 0;
+    text-align: center;
 }
 
 .hero{
@@ -152,6 +152,8 @@ section {
 
 .our-products h2{
     font-size: 2.7em;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 
 }
 
@@ -159,7 +161,7 @@ section {
     background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
     padding: 3em;
     border-radius: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     text-align: center;
 
     &__title {
@@ -169,4 +171,30 @@ section {
         text-shadow: 0 0 .2em rgba(#000, .2);
     }
 
+    &__img {
+        margin: -5em 0 0 0;
+      }
+
 }
+
+.hero {
+    --clr-accent: #faa700;
+  }
+
+.shoe-red {
+    --clr-inner: #faa700;
+    --clr-outer: #e48d00;
+    --clr-accent: #a1173c;
+  }
+  
+  .shoe-white {
+    --clr-inner: #fce4b3;
+    --clr-outer: #eac886;
+    --clr-accent: #2f4858;
+  }
+  
+  .shoe-blue {
+    --clr-inner: #6dd5ed;
+    --clr-outer: #2193b0;
+    --clr-accent: #008951;
+  }
