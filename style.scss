@@ -165,8 +165,9 @@ section {
     text-align: center;
 
     &__title {
-        font-size: 4rem;
-        line-height: 1.1;
+        font-size: clamp(3rem, calc(5vw + 1em ), 5.5em);
+        text-transform: uppercase;
+        line-height: 1;
         color: #fff;
         text-shadow: 0 0 .2em rgba(#000, .2);
     }
@@ -177,12 +178,32 @@ section {
 
         @media(min-width: 45em){
             text-align: left;
+            margin-bottom: 9em;
+
+            &__title{
+                margin: 0;
+            }
+
             &__img {
                 float: right;
-                width: 50%;
+                width: 65%;
+
+                shape-outside: url(img/shoe-1.png);
+                shape-margin: 1em;
+                margin: 0 -5em 0 0;
+                
             } 
 
-        }
+            &.shoe-left {
+                .product__img{
+                float: left;
+                shape-outside: url(img/shoe-2.png);
+                margin: 0 0 0 -5em;
+                shape-margin: 2em;
+            }
+         }
+
+    }
 }
 
 .hero {
